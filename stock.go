@@ -10,10 +10,10 @@ import (
 	"strings"
 )
 
-type Quote struct{
-	Symbol string
-	Last string
-	Change string
+type Quote struct {
+	Symbol        string
+	Last          string
+	Change        string
 	ChangePercent string
 }
 
