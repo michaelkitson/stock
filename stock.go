@@ -20,7 +20,7 @@ type Quote struct{
 func main() {
 	symbols := os.Args[1:]
 	if len(symbols) == 0 {
-	fmt.Printf("Usage stock <symbol>\n")
+		fmt.Printf("Usage stock [symbol ...]\n")
 		return
 	}
 	resp, err := http.Get(fmt.Sprintf("http://api.addata.wallst.com/net/a5878a3d6f2be40db26311f6f8fb21a3/MiniQuotes/json?symbols=%s", strings.Join(symbols, "|")))
